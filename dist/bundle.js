@@ -73,19 +73,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foo__ = __webpack_require__(5);
 
 
 
-function component () {
-  var element = __WEBPACK_IMPORTED_MODULE_1_jquery___default()('<div></div>')
 
-  /* lodash is required for the next line to work */
-  element.html(__WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(['Hello','webpack'], ' '));
+function component() {
+    var element = __WEBPACK_IMPORTED_MODULE_1_jquery___default()('<div></div>');
 
-  return element.get(0);
+    /* lodash is required for the next line to work */
+    element.html(__WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(['Hello','webpack'], ' '))
+
+    return element.get(0);
 }
 
 document.body.appendChild(component());
+console.log(__WEBPACK_IMPORTED_MODULE_2__foo__["a" /* default */])
+console.log(Object(__WEBPACK_IMPORTED_MODULE_2__foo__["a" /* default */])())
 
 /***/ }),
 /* 1 */
@@ -27493,6 +27497,15 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+    return '芳芳的教程'
+});
 
 /***/ })
 /******/ ]);
